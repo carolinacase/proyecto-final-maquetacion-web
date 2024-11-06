@@ -8,11 +8,15 @@
      text-decoration: none;
      color: white
 }
-body{
-    background-color: black; /*todoo*/
 
+html, body {
+    background-color: black; 
+    height: 100%;       /* Asegura que el contenido ocupa al menos el 100% de la altura */
+    margin: 0;          /* Elimina márgenes predeterminados */
+    overflow-x: hidden; /* Evita desplazamiento horizontal */
+    overflow-y: auto;   /* Activa el desplazamiento vertical */
+    scroll-behavior: smooth; /* Esto activa el desplazamiento suave */
 }
-
 header{
     position: fixed;/*esto hace que el header se quede en la parte posterior*/
     right: 0;
@@ -74,7 +78,11 @@ header{
     gap: 2rem; /*espacio de 2 rem entre ambas columnas*/
 }
 section {
-    padding: 0 8%;
+    position: relative;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    align-content: center;
+    
 }
 
 .hero-text h1 {
@@ -137,7 +145,6 @@ section {
 }
 
 .icons {
-    position: absolute;
     top: 50vh;
     padding: 0 3%;
     transform: translateY(-50%);
