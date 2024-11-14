@@ -18,3 +18,12 @@ sr.revel('.hero-img',{delay: 450, origin:'top'})
 sr.revel('.icons',{delay: 500, origin:'left'})
 sr.revel('.scroll-down',{delay: 450, origin:'right'})
 
+const navbar = document.querySelector('.navbar');  // Selecciona el elemento <ul> con la clase 'navbar'
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('.scrolled');  // Agrega la clase 'scrolled' cuando el scroll es mayor a 50px
+    } else {
+        navbar.classList.remove('.scrolled');  // Remueve la clase 'scrolled' cuando el scroll es menor a 50px
+    }
+});
