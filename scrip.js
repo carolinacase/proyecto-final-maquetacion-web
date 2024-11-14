@@ -1,17 +1,20 @@
-// Seleccionar todos los enlaces de la barra de navegación
-const links = document.querySelectorAll('a[href^="#"]');
+const menu = document.querySelector('#menu-icon')
+const navlist = document.querySelector('.navbar')
 
-links.forEach(link => {
-    link.addEventListener("click", function(event) {
-        event.preventDefault(); // Evitar el comportamiento predeterminado de los enlaces
+menu.onclick = () => {
+    menu.classList.toggle('bx-x')
+    navlist.classList.toggle('open')
+}
 
-        const targetId = link.getAttribute("href"); // Obtener el id de la sección
-        const targetElement = document.querySelector(targetId); // Buscar el elemento con ese id
+const sr = ScrollReveal ({
+    distance: '65px',
+    duration: 2000,
+    delay: 450,
+    reset: true
+})
 
-        // Desplazarse suavemente hacia la sección
-        targetElement.scrollIntoView({
-            behavior: "smooth", // Desplazamiento suave
-            block: "start" // Alineación en la parte superior
-        });
-    });
-});
+sr.revel('.hero-text',{delay: 200, origin:'top'})
+sr.revel('.hero-img',{delay: 450, origin:'top'})
+sr.revel('.icons',{delay: 500, origin:'left'})
+sr.revel('.scroll-down',{delay: 450, origin:'right'})
+

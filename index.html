@@ -18,24 +18,24 @@
     <!-- https://fonts.google.com/ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
     <!-- JavaScript-->
     <script src="script.js"></script>
-    
+
     <!-- Cabecera de la página web -->
     <header>
         <!-- Logo -->
         <a href="#" class="logo">CAROLINA CASE</a>
 
         <!-- Truco para que el botón sea clickeable sin usar Javascript -->
-        <input type="checkbox" name="checkbox" id="menu-toggle">   
-        <label for="menu-toggle">
-            <div class='bx bx-menu-alt-right' id="menu-icon"></div>
-        </label>
-        
-        <ul class="navlist">
+
+        <div class='bx bx-menu-alt-right' id="menu-icon"></div>
+
+        <ul class="navbar">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About me</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -43,11 +43,15 @@
         </ul>
     </header>
 
+    <div class="scroll-down">
+        <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
+    </div>
+
     <!-- Hero section -->
     <section class="hero">
         <div class="hero-text">
-            <h4>¡Hola! Soy Carolina, una desarrolladora web apasionada por crear experiencias digitales atractivas y funcionales. En este portafolio comparto algunos de mis proyectos, donde uso tecnologías como HTML, CSS, JavaScript y React. ¡Gracias por visitar y espero que te guste!</h4>
-            <p>Gestión eficiente para servicios y productos web</p><br>
+            <h4>¡Hi! I'm Carolina</h4>
+            <p>DISEÑO Y DESARROLLO WEB</p><br>
             <a href="#">CV</a>
             <a href="#">Conocé mis proyectos</a>
         </div>
@@ -56,6 +60,7 @@
             <img src="/assets/imgs/carolinacase.png" alt="Carolina case foto">
         </div>
     </section>
+    
 
     <div class="icons">
         <!-- LinkedIn -->
@@ -69,25 +74,55 @@
         </a>
     </div>
 
-    <div class="scroll-down">
-        <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
-    </div>
+   
 
     <!-- Secciones del portafolio -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>Contenido sobre mí...</p>
+        <h2>Sobre Mi...</h2>
+        <p>
+            En los ultimos años aprendí que todo proceso, ya sea administrativo o tecnológico,
+            tiene el potencial de ser mejorado con una visión clara y un enfoque constante
+            en la optimización. Mi experiencia en gestión en el sector de la construcción
+            me enseñó a encontrar soluciones prácticas en medio del caos.</p>
+
+        <p>Hoy, me encuentro en una transición hacia el desarrollo web,
+            donde busco integrar mi amor por el aprendizaje con las nuevas
+            herramientas tecnológicas. Creo que cada cambio es una oportunidad
+            para reinventarse, y mi objetivo es seguir creciendo, encontrando
+            formas de simplificar y mejorar los procesos, mientras aprendo del mundo de la tecnología.
+        </p>
     </section>
 
     <section id="projects">
-        <h2>Proyectos</h2>
-        <p>Detalles de mis proyectos...</p>
+        <h2>Mis Proyectos</h2>
+        <div class="projects-container">
+            <!-- Proyecto 1 -->
+            <div class="project-card">
+                <img src="img/login.jpeg" alt="Login con validación JavaScript">
+                <p>Login hecho con JavaScript. Implementa validación de usuario y contraseña.</p>
+                <a href="https://login-con-validacion-javascript.netlify.app/" target="_blank" class="project-btn">Ver
+                    Proyecto</a>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <img src="img/formularioRegistro.jpeg" alt="Formulario con validación JavaScript">
+                <p>Formulario interactivo con validación en tiempo real usando JavaScript.</p>
+                <a href="https://formulario-con-validacion-javascript.netlify.app/" target="_blank"
+                    class="project-btn">Ver Proyecto</a>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="project-card">
+                <img src="img/redSocial.jpeg" alt="Simulación de Red Social">
+                <p>Simulación de una red social estándar, con funcionalidades básicas.</p>
+                <a href="https://simulacion-red-social.netlify.app/" target="_blank" class="project-btn">Ver
+                    Proyecto</a>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Información de contacto...</p>
-    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="scrip.js"></script>
 
 </body>
 
