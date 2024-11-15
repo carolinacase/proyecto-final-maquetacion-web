@@ -19,19 +19,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
 
 <body>
-    <!-- JavaScript-->
-    <script src="script.js"></script>
 
     <!-- Cabecera de la página web -->
     <header>
         <!-- Logo -->
         <a href="#" class="logo">CAROLINA CASE</a>
 
-        <!-- Truco para que el botón sea clickeable sin usar Javascript -->
 
         <div class='bx bx-menu-alt-right' id="menu-icon"></div>
 
@@ -51,16 +49,16 @@
     <section class="hero">
         <div class="hero-text">
             <h4>¡Hi! I'm Carolina</h4>
-            <p>DISEÑO Y DESARROLLO WEB</p><br>
+            <p>DESING AND DEVELOPER WEB</p><br>
             <a href="#">CV</a>
-            <a href="#">Conocé mis proyectos</a>
+            <a href="#">See My Projects</a>
         </div>
 
         <div class="hero-img">
             <img src="/assets/carolinacase.png" alt="Carolina case foto">
         </div>
     </section>
-    
+
 
     <div class="icons">
         <!-- LinkedIn -->
@@ -76,65 +74,106 @@
 
     <div class="content">
 
-    <!-- Secciones del portafolio -->
-    <section id="about">
-        <h2>Sobre Mi...</h2>
-        <p>
-            En los ultimos años aprendí que todo proceso, ya sea administrativo o tecnológico,
-            tiene el potencial de ser mejorado con una visión clara y un enfoque constante
-            en la optimización. Mi experiencia en gestión en el sector de la construcción
-            me enseñó a encontrar soluciones prácticas en medio del caos.</p>
+        <!-- Secciones del portafolio -->
+        <section id="about">
+            <h2>Sobre Mi...</h2>
+            <p>
+                En los ultimos años aprendí que todo proceso,tiene el potencial de ser mejorado con 
+                una visión clara y un enfoque constante en la optimización. 
+                Mi experiencia en gestión me enseñó a encontrar soluciones prácticas en medio del caos.</p>
 
-        <p>Hoy, me encuentro en una transición hacia el desarrollo web,
-            donde busco integrar mi amor por el aprendizaje con las nuevas
-            herramientas tecnológicas. Creo que cada cambio es una oportunidad
-            para reinventarse, y mi objetivo es seguir creciendo, encontrando
-            formas de simplificar y mejorar los procesos, mientras aprendo del mundo de la tecnología.
-        </p>
-    </section>
+            <p>Creo que cada cambio es una oportunidad
+                para reinventarse, y mi objetivo es seguir creciendo, encontrando
+                formas de simplificar y mejorar los procesos, mientras aprendo del mundo de la tecnología.
+            </p>
+        </section>
 
-    <section id="projects">
-        <h2>Mis Proyectos</h2>
-        <div class="projects-container">
-            <!-- Proyecto 1 -->
-            <div class="project-card">
-                <img src="assets/login.jpeg" alt="Login con validación JavaScript">
-                <p>Login hecho con JavaScript. Implementa validación de usuario y contraseña.</p>
-                <a href="https://login-con-validacion-javascript.netlify.app/" target="_blank" class="project-btn">Ver Proyecto</a>
+        <section id="timeline">
+            <h2>My Skills</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="circle">
+                  <img src="https://img.icons8.com/bubbles/50/github.png" alt="GitHub Icon">
+                </div>
+                <p>Git</p>
+              </div>
+              <div class="timeline-item">
+                <div class="circle">
+                  <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-java-script-web-development-flaticons-lineal-color-flat-icons-2.png" alt="JavaScript Icon">
+                </div>
+                <p>JavaScript</p>
+              </div>
+              <div class="timeline-item">
+                <div class="circle">
+                  <img src="https://img.icons8.com/clouds/100/notion.png" alt="Notion Icon">
+                </div>
+                <p>Notion</p>
+              </div>
+              <div class="timeline-item">
+                <div class="circle">
+                  <img src="https://img.icons8.com/bubbles/50/figma.png" alt="Figma Icon">
+                </div>
+                <p>Figma</p>
+              </div>
+              <div class="timeline-item">
+                <div class="circle">
+                  <img src="https://img.icons8.com/bubbles/50/adobe-photoshop.png" alt="Photoshop Icon">
+                </div>
+                <p>Photoshop</p>
+              </div>
+              <div class="timeline-item">
+                <div class="circle">
+                  <img src="https://img.icons8.com/clouds/100/react.png" alt="React Icon">
+                </div>
+                <p>React</p>
+              </div>
             </div>
-            <!-- Proyecto 2 -->
-            <div class="project-card">
-                <img src="assets/formularioRegistro.jpeg" alt="Formulario con validación JavaScript">
-                <p>Formulario interactivo con validación en tiempo real usando JavaScript.</p>
-                <a href="https://formulario-con-validacion-javascript.netlify.app/" target="_blank" class="project-btn">Ver Proyecto</a>
+          </section>
+          
+          
+        <section id="projects">
+            <h2>Mis Proyectos</h2>
+            <div class="projects-container">
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <img src="assets/login.jpeg" alt="Login con validación JavaScript">
+                    <p>Login hecho con JavaScript. Implementa validación de usuario y contraseña.</p>
+                    <a href="https://login-con-validacion-javascript.netlify.app/" target="_blank"
+                        class="project-btn">Ver Proyecto</a>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <img src="assets/formularioRegistro.jpeg" alt="Formulario con validación JavaScript">
+                    <p>Formulario interactivo con validación en tiempo real usando JavaScript.</p>
+                    <a href="https://formulario-con-validacion-javascript.netlify.app/" target="_blank"
+                        class="project-btn">Ver Proyecto</a>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <img src="assets/redSocial.jpeg" alt="Simulación de Red Social">
+                    <p>Simulación de una red social estándar, con funcionalidades básicas.</p>
+                    <a href="https://simulacion-red-social.netlify.app/" target="_blank" class="project-btn">Ver
+                        Proyecto</a>
+                </div>
             </div>
-            <!-- Proyecto 3 -->
-            <div class="project-card">
-                <img src="assets/redSocial.jpeg" alt="Simulación de Red Social">
-                <p>Simulación de una red social estándar, con funcionalidades básicas.</p>
-                <a href="https://simulacion-red-social.netlify.app/" target="_blank" class="project-btn">Ver Proyecto</a>
+        </section>
+
+        <div class="contact-container">
+            <p id="email-display">carolina.case97@gmail.com</p>
+            <div class="contact-buttons">
+                <button onclick="copyEmail()" aria-label="Copiar Email">
+                    <img src="https://img.icons8.com/material-outlined/24/copy.png" alt="Copiar icono" />
+                </button>
+                <button onclick="sendEmail()" aria-label="Enviar Email">
+                    <img src="https://img.icons8.com/metro/26/paper-plane.png" alt="Enviar icono" />
+                </button>
             </div>
         </div>
-    </section>    
 
-    <div class="contact-container">
-        <p id="email-display">carolina.case97@gmail.com</p>
-        <div class="contact-buttons">
-          <button onclick="copyEmail()" aria-label="Copiar Email">
-            <img src="https://img.icons8.com/material-outlined/24/copy.png" alt="Copiar icono" />
-          </button>
-          <button onclick="sendEmail()" aria-label="Enviar Email">
-            <img src="https://img.icons8.com/metro/26/paper-plane.png" alt="Enviar icono" />
-          </button>
-        </div>
-      </div>
-      
-      
-    <script src="https://unpkg.com/scrollreveal"></script>
+    </div>
 
-    <script src="scrip.js"></script>
     
-
+    <script src="script.js"></script>
 </body>
 
 
